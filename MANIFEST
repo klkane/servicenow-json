@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/ServiceNow-JSON.t
+lib/ServiceNow/JSON.pm
