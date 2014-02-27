@@ -162,7 +162,7 @@ ServiceNow::JSON - Absraction Library for ServiceNow JSON WebServices
 =head1 DESCRIPTION
 
 Allows for easy use of the ServiceNow JSON REST api from perl.  Supports
-both legacy and new JSON versions.  
+both ServiceNow JSON and ServiceNow JSONv2 implementations.  
 
 =head1 SYNOPSIS
 
@@ -199,8 +199,11 @@ my $delete_multi = $sn->deleteMultiple( "cmdb_ci_computer",
 
 =head1 DESCRIPTION
 
-If you need to use the legacy version of the ServiceNow JSON API, pass legacy => 1 
-to the contructor.
+If you need to use version 1 of the ServiceNow JSON API, pass legacy => 1 
+to the contructor. "Instance" in the contructor represents the part of the 
+service now url that is before servicenow.com.  So instance.servicenow.com.
+
+=head1 METHODS
 
 =head2 get
 
