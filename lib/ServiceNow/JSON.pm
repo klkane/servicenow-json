@@ -4,6 +4,8 @@ use REST::Client;
 use MIME::Base64;
 use JSON;
 
+our $VERSION = 0.01;
+
 has 'instance' => (
     is => 'rw',
     isa => 'Str',
@@ -201,7 +203,7 @@ my $delete_multi = $sn->deleteMultiple( "cmdb_ci_computer",
 
 If you need to use version 1 of the ServiceNow JSON API, pass legacy => 1 
 to the contructor. "Instance" in the contructor represents the part of the 
-service now url that is before servicenow.com.  So instance.servicenow.com.
+service now url that is before service-now.com.  So instance.service-now.com.
 
 =head1 METHODS
 
